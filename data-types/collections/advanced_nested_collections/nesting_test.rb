@@ -16,7 +16,7 @@ require 'minitest/pride'
 class NestedTest < MiniTest::Test
 
   def test_list_of_olive_garden_employess
-    skip
+    # skip
     #^^^ Un-Skip each test
     #=======================
     # EXAMPLE
@@ -26,47 +26,49 @@ class NestedTest < MiniTest::Test
   end
 
   def test_pancake_ingredients
-    skip
+    # skip
     #=======================
-    # pancake_ingredients = <your code here>
+    pancake_ingredients = stores[:dennys][:dishes][0][:ingredients]
     #=======================
     assert_equal ["Flour", "Eggs", "Milk", "Syrup"], pancake_ingredients
   end
 
   def test_rissotto_price
-    skip
+    # skip
     #=======================
-    # risotto_price = <your code here>
+    risotto_price = stores[:olive_garden][:dishes][0][:price]
     #=======================
     assert_equal 12, risotto_price
   end
 
   def test_big_mac_ingredients
-    skip
+    # skip
     #=======================
-    # big_mac_ingredients = <your code here>
+    big_mac_ingredients = stores[:macdonalds][:dishes][0][:ingredients]
     #=======================
     assert_equal ['Bun','Hamburger','Ketchup','pickles'], big_mac_ingredients
   end
 
   def test_list_of_restaurants
-    skip
+    # skip
     #=======================
-    # store_names = <your code here>
+    store_names = stores.keys
     #=======================
     assert_equal [:olive_garden, :dennys, :macdonalds], store_names
   end
 
   def test_list_of_dishes_names_for_olive_garden
-    skip
+    # skip
     #=======================
-    # dishes_names = <your code here>
+    dishes_names = stores[:olive_garden][:dishes].map do |dish|
+      dish[:name]
+    end
     #=======================
     assert_equal ['Risotto', 'Steak'], dishes_names
   end
 
   def test_list_of_employees_across_all_restaurants
-    skip
+    # skip
     #=======================
     # employee_names = <your code here>
     #=======================
