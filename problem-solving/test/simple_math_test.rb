@@ -40,7 +40,12 @@ class SimpleMathTest < Minitest::Test
   end
 
   def test_it_can_multiply_two_numbers
+    sm = SimpleMath.new
 
+    result = sm.multiply(3,3)
+    expected = 9
+
+    assert_equal expected, result
     # instantiate the class
     #
     # call the method being tested
@@ -51,7 +56,12 @@ class SimpleMathTest < Minitest::Test
 
 
   def test_it_can_multiply_two_other_numbers
+    sm = SimpleMath.new
 
+    result = sm.multiply(5,5)
+    expected = 25
+
+    assert_equal expected, result
     # instantiate the class
     #
     # call the method being tested
@@ -61,10 +71,22 @@ class SimpleMathTest < Minitest::Test
   end
 
   def test_it_can_divide_two_numbers
+    sm = SimpleMath.new
+
+    result = sm.divide(9,3)
+    expected = 3
+
+    assert_equal expected, result
     # your code goes here
   end
 
   def test_it_can_divide_two_other_numbers
+    sm = SimpleMath.new
+
+    result = sm.divide(3.0,2.0)
+    expected = 1.5
+
+    assert_equal expected, result
     # # your code goes here
   end
 
