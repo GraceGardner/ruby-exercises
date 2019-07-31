@@ -13,6 +13,7 @@ class HelloTest < Minitest::Test
   end
 
   def test_it_says_hello_to_jeff
+    #skip
     hello = Hello.new
 
     result = hello.greet("Jeff")
